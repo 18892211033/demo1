@@ -9,6 +9,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Authority implements Serializable {
-    private int authorityId;
-    private int roleId;
+    private Integer authorityId;
+    private Integer roleId;
 }

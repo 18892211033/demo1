@@ -9,12 +9,12 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Address implements Serializable {
-    private int addrId;
+    private Integer addrId;
     private String addrProvincer;
     private String addrCity;
     private String addrArea;
     private String addrDetail;
-    private int addrUserId;
+    private Integer addrUserId;
     private String addrUserPhone;
     private String addrNickName;
     private String addrState;

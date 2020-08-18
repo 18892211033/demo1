@@ -9,10 +9,10 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GoodsType implements Serializable {
-    private int typeId;
+    private Integer typeId;
     private String typeName;
-    private int typePid;
-    private int typeLv;
+    private Integer typePid;
+    private Integer typeLv;
     private String typePath;
     private String typeState;
 }

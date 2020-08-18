@@ -9,12 +9,12 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Doods implements Serializable {
-    private int goodsId;
+    private Integer goodsId;
     private String goodName;
     private double goosPrice;
-    private int goodsNum;
+    private Integer goodsNum;
     private String goodsType;
-    private int goodsMemory;
+    private Integer goodsMemory;
     private String goodsColor;
     private String goodsImgUrl;
     private String goodsState;

@@ -9,9 +9,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderDetail implements Serializable {
-    private int detailId;
+    private Integer detailId;
     private String detailOrder;
     private String detailGoodsId;
     private double detailPrice;
-    private int detailNum;
+    private Integer detailNum;
 }

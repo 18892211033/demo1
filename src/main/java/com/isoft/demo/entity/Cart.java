@@ -9,9 +9,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Cart implements Serializable {
-    private int cartId;
-    private int cartGoods;
-    private int cartNum;
+    private Integer cartId;
+    private Integer cartGoods;
+    private Integer cartNum;
     private double cartPrice;
-    private int cartUserId;
+    private Integer cartUserId;
 }

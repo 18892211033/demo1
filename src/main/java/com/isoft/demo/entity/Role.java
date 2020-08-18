@@ -9,6 +9,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Role implements Serializable {
-    private int roleId;
+    private Integer roleId;
     private String roleName;
 }
