@@ -1,0 +1,11 @@
+{
+  "errCode": 0,
+  "msg": "登陆成功",
+  "data": {
+    "id": 11,
+    "name": "王思桐",
+    "regDatetime": "2020-07-24 09:09:09",
+    "status": 0,
+    "photoUrl": null
+  }
+}
