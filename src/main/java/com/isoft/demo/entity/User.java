@@ -24,4 +24,5 @@ public class User implements Serializable {
     private Date userCreateTime;
     private String userState;
     private String userPhoneUrl;
+    private String useroneUrl;
 }
