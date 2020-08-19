@@ -23,5 +23,6 @@ public class User implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss" , timezone = "Asia/Shanghai")
     private Date userCreateTime;
     private String userState;
-    private String userPhoneUrl;
+    private String userPhotoUrl;
+
 }
