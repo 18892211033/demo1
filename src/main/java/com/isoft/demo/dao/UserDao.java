@@ -1,29 +1,25 @@
 package com.isoft.demo.dao;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.isoft.demo.entity.User;
 import com.isoft.demo.mapper.UserMapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.Date;
+
 @Repository
-public interface UserDao extends UserMapper {
-    @Select("select count(*) from tb_user where userId=#{userId} and userPass=#{userPass}")
-    int getPassCounts(@Param("userId")Integer userId, @Param("userPass")String userPass);
-    @Update(
-            "<script>"+
-                    "       update tb_user" +
-                    "        <set>" +
-                    "            <if test=\"null != userPass\">" +
-                    "                userPass=#{userPass}," +
-                    "            </if>" +
-                    "            <if test=\"null !=userPhotoUrl\">" +
-                    "                userPhotoUrl=#{userPhotoUrl}" +
-                    "            </if>" +
-                    "        </set>" +
-                    "        where userId=#{userId}"
-            +"</script>"
-    )
-    int update(User user);
+public class UserDao{
+    @Autowired
+    UserMapper userMapper;
+    QueryWrapper<User> queryWrapper = new QueryWrapper<>() ;
+    public int getPassCounts(Integer userId, String userPass){
+        int i = userMapper.getPassCounts(userId,userPass);
+        return i < 1  ? 0 : 1 ;
+    }
+    public int update(User user){
+        int i = userMapper.update(user);
+        return i < 1  ? 0 : 1 ;
+    }
+
 }

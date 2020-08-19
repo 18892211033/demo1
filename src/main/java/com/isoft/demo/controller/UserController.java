@@ -20,6 +20,11 @@ public class UserController {
     @Autowired
     private UserService userService;
     String path = "userphoto/";
+    @GetMapping("ccc")
+    public String ccc(){
+        System.out.println("ccccccccccccccccccccc");
+        return "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊";
+    }
     /*修改密码*/
     @PutMapping("pwd")
     public ResponseData updatePassword(@RequestBody Map<String , Object> map){
